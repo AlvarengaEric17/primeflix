@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Filme from './pages/Filme';
 import Header from './pages/components/Header';
+import Footer from './pages/components/Footer';
 import Erro from './pages/Erro'
 import Favoritos from './pages/Favoritos'
 
@@ -16,6 +17,10 @@ function RouteApp() {
                 <Route path='/favoritos' element={<Favoritos />} />
                 <Route path='*' element={<Erro />} />
             </Routes>
+
+            <Footer>
+                
+            </Footer>
         </BrowserRouter>
     )
 }
